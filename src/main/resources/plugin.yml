@@ -1,4 +1,0 @@
-name: Template
-version: '${version}'
-main: me.afek.template.Template
-api-version: 1.19
