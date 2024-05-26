@@ -9,6 +9,7 @@ public class Settings extends Config {
     @Ignore
     public static final Settings IMP = new Settings();
 
+    @Comment("Placeholders: {PRFX}, {PREFIX}")
     public String PREFIX = "&f[&6Temlate&f]&f";
     public String PERMISSIONS = "У вас недостаточно прав!";
 

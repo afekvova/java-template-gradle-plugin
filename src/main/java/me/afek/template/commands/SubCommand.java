@@ -3,6 +3,7 @@ package me.afek.template.commands;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
+import me.afek.template.common.StringCommon;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
@@ -16,7 +17,7 @@ public abstract class SubCommand {
     public SubCommand(String label, int minArgs, String usage) {
         this.label = label;
         this.minArgs = minArgs;
-        this.usage = ChatColor.translateAlternateColorCodes('&', usage);
+        this.usage = StringCommon.color(usage);
     }
 
     public boolean checkPermission(CommandSender sender) {
